@@ -1,20 +1,31 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from "@/views/Home";
 import NoticeList from "@/views/NoticeList";
+import Item from "@/views/Item";
+import Staff from "@/views/Staff";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'Noticelist',
+    component: NoticeList
   },
   {
     path: '/noticelist',
-    name: 'noticelist',
+    name: 'Noticelist',
     component: NoticeList
+  },
+  {
+    path: '/staff',
+    name: 'Staff',
+    component: Staff
+  },
+  {
+    path: '/item',
+    name: 'Item',
+    component: Item
   }
 
 ]
